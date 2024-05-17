@@ -46,7 +46,7 @@ find_package( tinyxml2 REQUIRED )
 find_package( ZLIB REQUIRED )
 find_package( OpenVDB REQUIRED )
 find_package( HDF5 REQUIRED )
-find_package( MKL REQUIRED )
+find_package( MKL REQUIRED HINTS "C:/Program Files (x86)/Intel/oneAPI/mkl/latest/lib/cmake/mkl" )
 
 target_include_directories( stoke PUBLIC ${thinkboxlibrary_INCLUDE_DIRS} )
 target_include_directories( stoke PUBLIC ${magma_INCLUDE_DIRS} )
